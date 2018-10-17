@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>robofriends-pwa/favicon.ico at master · aneagoie/robofriends-pwa</title>
+  <title>robofriends-pwa/android-chrome-512x512.png at master · aneagoie/robofriends-pwa</title>
     <meta name="description" content="Udemy tutorial - adding PWA capabilities to a react app - aneagoie/robofriends-pwa">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -37,10 +37,10 @@
     <meta property="og:image" content="https://avatars1.githubusercontent.com/u/10776230?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="aneagoie/robofriends-pwa" /><meta property="og:url" content="https://github.com/aneagoie/robofriends-pwa" /><meta property="og:description" content="Udemy tutorial - adding PWA capabilities to a react app - aneagoie/robofriends-pwa" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzI2NTQxNzI4OmQ4OGFjOGZlMzZkODZjMTEyZjcxOWQ5NmVlYjZmYTQ2YzU4NjkzZWJmMTA4YTgwMTkyMTg3NmM3YmY3YzAzNDU=--267cf6da84134075cbab37ae468dcc42f4abb070">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzI2NTQxNzI4OjdmM2RiYzM5YzI2NTU2NDcxZWI0YzJkYzkzNzk3YTg2NjhlOGM0MjliNTliMjQyZWYwOTc1M2UwYzc1NDE4MmQ=--4f927b7554ba0d75e5581471dcb6ade0c4f69b81">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="950A:2195:34C667E:5A7F0D0:5BC7A85D" data-pjax-transient>
+  <meta name="request-id" content="950A:2195:34C53F0:5A7BCAF:5BC7A822" data-pjax-transient>
 
 
   
@@ -51,7 +51,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="950A:2195:34C667E:5A7F0D0:5BC7A85D" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="37132245" /><meta name="octolytics-actor-login" content="cippero" /><meta name="octolytics-actor-hash" content="9e3d7c825941f5783ce2504bdc39d7abf1c800a3ed45230d498d2816d2be4e0e" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="950A:2195:34C53F0:5A7BCAF:5BC7A822" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="37132245" /><meta name="octolytics-actor-login" content="cippero" /><meta name="octolytics-actor-hash" content="9e3d7c825941f5783ce2504bdc39d7abf1c800a3ed45230d498d2816d2be4e0e" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -70,7 +70,7 @@
     <meta name="user-login" content="cippero">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZDcwOWY1NWQyMzA4NGRmMDczMzViMDNkZjEyZDU5YTYyMTA2ZWI2ZTcxZDczZTcxNTIyZDFmOGRmNzc2MzBlMXx7InJlbW90ZV9hZGRyZXNzIjoiMjQuNTYuMjI1LjIzIiwicmVxdWVzdF9pZCI6Ijk1MEE6MjE5NTozNEM2NjdFOjVBN0YwRDA6NUJDN0E4NUQiLCJ0aW1lc3RhbXAiOjE1Mzk4MTE0MjgsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="N2UyNjJlMzMzYjFmZjE1Y2UwZGU0MDAxZWIzYTdjMTIyYzRkMjJiMTc0MGFhMjdmYTM0ODk3MGUzNWVlMjBhMXx7InJlbW90ZV9hZGRyZXNzIjoiMjQuNTYuMjI1LjIzIiwicmVxdWVzdF9pZCI6Ijk1MEE6MjE5NTozNEM1M0YwOjVBN0JDQUY6NUJDN0E4MjIiLCJ0aW1lc3RhbXAiOjE1Mzk4MTEzOTQsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,SUGGESTED_CHANGES_UX_TEST,COLLAPSE_REPEATED_COMMENTS,ISSUE_AND_PR_HOVERCARDS">
 
@@ -86,7 +86,7 @@
   <meta name="octolytics-dimension-user_id" content="10776230" /><meta name="octolytics-dimension-user_login" content="aneagoie" /><meta name="octolytics-dimension-repository_id" content="126527817" /><meta name="octolytics-dimension-repository_nwo" content="aneagoie/robofriends-pwa" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="126527817" /><meta name="octolytics-dimension-repository_network_root_nwo" content="aneagoie/robofriends-pwa" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/aneagoie/robofriends-pwa/blob/master/public/favicon.ico" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/aneagoie/robofriends-pwa/blob/master/public/android-chrome-512x512.png" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -155,7 +155,7 @@
           autocapitalize="off"
           aria-autocomplete="list"
           aria-controls="jump-to-results"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=aGahiWTAHswtVZ420EN4arKr/6LotHXCpfOVNyOJQZi9jrk1nzu2t0RFEEwtDqnEW+v3bulwvYa72qcU8eZVZA=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=UIm7SFa5Qop/Kic6Ldc/HjaQqsFaOKY+PfYsXlg0dZOFYaP0rULq8RY6qUDQmu6w39CiDVv8bnoj3x59ilthbw=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -309,7 +309,7 @@
           <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
           <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
           <li>
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ELC4scm+P78b6rJqOFdp5cJgpN9hpNhJY9e6Eznk1QO9HsCmPAV2HynO/nHb17vHFpYuLJ28MZyO1OCSihRc5g==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RAA8+akteZlaLkoPjrExSVgqAhrDKGIIF+Djra4NQ0fprkTuXJYwOWgKBhRtMeNrjNyI6T8wi93647ksHf3Kog==" />
               <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
                 Sign out
               </button>
@@ -322,7 +322,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="f1y8K1Rs1Bv5tXjfrQNbS36LWINiQIJmuWquKIvqxVLS8sQ8odedu8uRNMROg4lpqn3ScJ5Ya7NUafSpOBpMtw==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="lfUCKzpKIIdWAKPxNAbp5Y9rrMYeFFS589O2A0lkpOg4W3o8z/FpJ2Qk7+rXhjvHW50mNeIMvWwe0OyC+pQtDQ==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -360,7 +360,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AqtgLnCN0GL04ExzgJFQ/PJW2Q58Po3Z9Ilkd11TcN4IiuWX54F8rvddSBOJITet/0Ut4HKkzUgw9M+RW8UbSA==" />      <input type="hidden" name="repository_id" id="repository_id" value="126527817" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="y9wQeoszBvyCKbWdyIYV8S0PqnXpysq6b4NMCQuXJiHB/ZXDHD+qMIGUsf3BNnKgIBxem+dQiiur/ufvDQFNtw==" />      <input type="hidden" name="repository_id" id="repository_id" value="126527817" class="form-control" />
 
       <details class="details-reset details-overlay select-menu float-left">
         <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:blob#show">
@@ -423,7 +423,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/aneagoie/robofriends-pwa/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AI4UGRNuWs0hvpYkswxPrAMaYRKRXHqEjz+NI1sY+wF2TpNjyWCKle92yNvejBqxj2VkcwRhUe0nCk/gpqCacg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/aneagoie/robofriends-pwa/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="vqOw5lsJDVCkWSp+fwxTY3BHPA7guUaTMB08rLxsFOXIYzecgQfdCGqRdIESjAZ+/Dg5b3WEbfqYKP5vQdR1lg==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -438,7 +438,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/aneagoie/robofriends-pwa/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OJcDzyvi0W3uao0nIrK2FvE2H7u5KszU9N6+gox6AJmQcypCtPr7o+EdcKv0HpqFFkJEV24+p0MrMNCbdMN0lg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/aneagoie/robofriends-pwa/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="P6hWbJsbQMlJEqwoqiOJYCSK60hKz7MjcOuw+lCoRh6XTH/hBANqB0ZlUaR8j6Xzw/6wpJ3b2LSvBd7jqBEyEQ==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -457,7 +457,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/aneagoie/robofriends-pwa/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="hHL705GZme3uGLF7zWrhfp/ztAzWwPYtR0LaEpcOXwAOYhHW/AFiL/wFeleXh2JLPSMehzi2c4PS7y0Of/Awmw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/aneagoie/robofriends-pwa/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9Blk0CYilITgoCisl89JDNm8L6oImgcv4v8eqRa5QmZ+CY7VS7pvRvK944DNIso5e2yFIebsgoF3Uum1/kct/Q==" />
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -541,9 +541,9 @@
     
 
   
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/aneagoie/robofriends-pwa/blob/77893943d4d4c67a8e8c5a181b837f070d33cf97/public/favicon.ico">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/aneagoie/robofriends-pwa/blob/77893943d4d4c67a8e8c5a181b837f070d33cf97/public/android-chrome-512x512.png">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v21:eb12bb84467897dc2ced16a4544276ea -->
+    <!-- blob contrib key: blob_contributors:v21:8eab5af9b155bd9b2eeb5dcc31f8b266 -->
 
     
 
@@ -587,7 +587,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/aneagoie/robofriends-pwa/blob/gh-pages/public/favicon.ico"
+               href="/aneagoie/robofriends-pwa/blob/gh-pages/public/android-chrome-512x512.png"
                data-name="gh-pages"
                data-skip-pjax="true"
                rel="nofollow">
@@ -597,7 +597,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/aneagoie/robofriends-pwa/blob/master/public/favicon.ico"
+               href="/aneagoie/robofriends-pwa/blob/master/public/android-chrome-512x512.png"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -636,12 +636,12 @@
         </clipboard-copy>
       </div>
       <div id="blob-path" class="breadcrumb">
-        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/aneagoie/robofriends-pwa"><span>robofriends-pwa</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/aneagoie/robofriends-pwa/tree/master/public"><span>public</span></a></span><span class="separator">/</span><strong class="final-path">favicon.ico</strong>
+        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/aneagoie/robofriends-pwa"><span>robofriends-pwa</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/aneagoie/robofriends-pwa/tree/master/public"><span>public</span></a></span><span class="separator">/</span><strong class="final-path">android-chrome-512x512.png</strong>
       </div>
     </div>
 
 
-    <include-fragment src="/aneagoie/robofriends-pwa/contributors/master/public/favicon.ico" class="commit-tease commit-loader">
+    <include-fragment src="/aneagoie/robofriends-pwa/contributors/master/public/android-chrome-512x512.png" class="commit-tease commit-loader">
       <div>
         Fetching contributors&hellip;
       </div>
@@ -658,12 +658,12 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/aneagoie/robofriends-pwa/raw/master/public/favicon.ico">Download</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/aneagoie/robofriends-pwa/commits/master/public/favicon.ico">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/aneagoie/robofriends-pwa/raw/master/public/android-chrome-512x512.png">Download</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/aneagoie/robofriends-pwa/commits/master/public/android-chrome-512x512.png">History</a>
     </div>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/aneagoie/robofriends-pwa/delete/master/public/favicon.ico" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="qg3HDxn6YxIIYdtdG07rKGJozF/aN2bfwfaLMuOu5s4lkCeEy3K+GC9Ygp0cB16MUOg/esciCC4S5sBpKTs4oQ==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/aneagoie/robofriends-pwa/delete/master/public/android-chrome-512x512.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/xtJJUOTAwKnE0typru392RAJlNR4IxFI4Z0Vv66ME5gPqZB2mD8pFVs74knGQRwbVL6Y3CNE5YJfFLK7kK8Zg==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -671,7 +671,7 @@
 </form>  </div>
 
   <div class="file-info">
-    14.7 KB
+    84.5 KB
   </div>
 </div>
 
@@ -679,7 +679,7 @@
 
   <div itemprop="text" class="blob-wrapper data type-text ">
       <div class="image">
-          <a href="/aneagoie/robofriends-pwa/blob/master/public/favicon.ico?raw=true">View Raw</a>
+          <span class="border-wrap"><img src="/aneagoie/robofriends-pwa/blob/master/public/android-chrome-512x512.png?raw=true" alt="android-chrome-512x512.png"></span>
       </div>
   </div>
 
@@ -710,7 +710,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.20529s from unicorn-6879c8cfd7-qr5mf">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.27518s from unicorn-6879c8cfd7-jxq2b">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
