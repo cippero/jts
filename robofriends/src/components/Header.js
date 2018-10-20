@@ -15,7 +15,7 @@ export default class Header extends Component {
         return (
         <div>
             <h1 className='f1'>RoboFriends</h1>
-            <CounterButton />
+            <CounterButton color='blue'/>
         </div>
         );
     }

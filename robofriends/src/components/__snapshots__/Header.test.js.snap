@@ -17,12 +17,44 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "RoboFriends",
-      "className": "f1",
+      "children": Array [
+        <h1
+          className="f1"
+>
+          RoboFriends
+</h1>,
+        <CounterButton
+          color="blue"
+/>,
+      ],
     },
     "ref": null,
-    "rendered": "RoboFriends",
-    "type": "h1",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "RoboFriends",
+          "className": "f1",
+        },
+        "ref": null,
+        "rendered": "RoboFriends",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "blue",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -30,12 +62,44 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "RoboFriends",
-        "className": "f1",
+        "children": Array [
+          <h1
+            className="f1"
+>
+            RoboFriends
+</h1>,
+          <CounterButton
+            color="blue"
+/>,
+        ],
       },
       "ref": null,
-      "rendered": "RoboFriends",
-      "type": "h1",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "RoboFriends",
+            "className": "f1",
+          },
+          "ref": null,
+          "rendered": "RoboFriends",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "color": "blue",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
