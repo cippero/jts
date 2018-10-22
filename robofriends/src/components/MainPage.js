@@ -10,13 +10,13 @@ import Header from '../components/Header';
 
 export default class MainPage extends Component {
     componentDidMount() { this.props.onRequestRobots(); }
-    render() {
-        // console.log(this.props);
-        const { searchField, onSearchChange, robots, isPending } = this.props;
-        const filteredRobots = robots.filter(robot =>{
-            return robot.name.toLowerCase().includes(searchField.toLowerCase());
+    filterRobots = () => {
+        return this.props.robots.filter(robot => {
+            return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
         });
-        // setTimeout(() => { console.log(this.props); }, 1000);
+    }
+    render() {
+        const { onSearchChange, isPending } = this.props;
         return isPending ?
         <h1>Loading</h1> :
         (
@@ -25,7 +25,7 @@ export default class MainPage extends Component {
             <SearchBox searchChange={onSearchChange}/>
             <Scroll>
                 <ErrorBoundry>
-                <CardList robots={filteredRobots} />
+                <CardList robots={this.filterRobots()} />
                 </ErrorBoundry>
             </Scroll>
             </div>
