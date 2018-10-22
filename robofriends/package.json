@@ -2,7 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cippero.github.io/robofriends-pwa",
+  "homepage": "https://cippero.github.io/jts",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.2.0",
