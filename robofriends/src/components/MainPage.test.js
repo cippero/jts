@@ -53,3 +53,14 @@ describe('filterRobots function', () => {
         expect(wrapper3.instance().filterRobots()).toEqual([]);
     });
 });
+
+it('shows the loading screen correctly', () => {
+    const mockProps4 = {
+        onRequestRobots: jest.fn(),
+        robots: [],
+        searchField: '',
+        isPending: true
+    };
+    const wrapper4 = shallow(<MainPage { ...mockProps4 } />);
+    expect(wrapper4.find('[id="loading"]').exists()).toBe(true);
+});

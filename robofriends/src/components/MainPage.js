@@ -17,17 +17,16 @@ export default class MainPage extends Component {
     }
     render() {
         const { onSearchChange, isPending } = this.props;
-        return isPending ?
-        <h1>Loading</h1> :
+        return isPending ? <h1 id='loading'>Loading</h1> :
         (
             <div className='tc'>
-            <Header />
-            <SearchBox searchChange={onSearchChange}/>
-            <Scroll>
-                <ErrorBoundry>
-                <CardList robots={this.filterRobots()} />
-                </ErrorBoundry>
-            </Scroll>
+                <Header />
+                <SearchBox searchChange={onSearchChange} />
+                <Scroll>
+                    <ErrorBoundry>
+                        <CardList robots={this.filterRobots()} />
+                    </ErrorBoundry>
+                </Scroll>
             </div>
         );
     }
