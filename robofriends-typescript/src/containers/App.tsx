@@ -19,25 +19,25 @@ interface IAppState {
 }
 
 class App extends React.Component<IAppProps, IAppState> {
-  constructor(props) {
-    super(props)
+  constructor(props: IAppProps) {
+    super(props);
     this.state = {
       robots: [],
       searchfield: ''
     }
   }
 
-  componentDidMount() {
+  componentDidMount(): void {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response=> response.json())
       .then(users => {this.setState({ robots: users})});
   }
 
-  onSearchChange = (event) => {
+  onSearchChange = (event: React.SyntheticEvent<HTMLInputElement>): void => {
     this.setState({ searchfield: event.currentTarget.value })
   }
 
-  render() {
+  render(): JSX.Element {
     const { robots, searchfield } = this.state;
     const filteredRobots = robots.filter(robot =>{
       return robot.name.toLowerCase().includes(searchfield.toLowerCase());
