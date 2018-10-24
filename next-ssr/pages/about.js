@@ -6,6 +6,9 @@ const About = () => (
         <Link href='/'>
             <button>Home</button>
         </Link>
+        <Link href='/robots'>
+            <button>Robots</button>
+        </Link>
     </div>
 );
 
