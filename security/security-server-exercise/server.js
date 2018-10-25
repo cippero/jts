@@ -7,6 +7,15 @@ const bodyParser = require('body-parser');
 const uuidv4     = require('uuid/v4');
 const app = express();
 
+// const whitelist = ['https://www.google.com', 'http://localhost:3000'];
+// const corsOptions = {
+//   origin: (origin, callback) => {
+//     if (whitelist.indexOf(origin) !== -1) callback(null, true);
+//     else callback(new Error('Not allowed by CORS'));
+//   }
+// };
+// app.use(cors(corsOptions));
+
 app.use(cors());
 app.use(morgan('tiny'));
 app.use(helmet());
