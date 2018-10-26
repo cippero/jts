@@ -14,9 +14,9 @@ const handleApiCall = (req, res) => {
 }
 
 const handleImage = (req, res, db) => {
-  const { id } = req.body;
+  const { id, faces } = req.body;
   db('users').where('id', '=', id)
-  .increment('entries', 1)
+  .increment('entries', faces)
   .returning('entries')
   .then(entries => {
     res.json(entries[0]);
