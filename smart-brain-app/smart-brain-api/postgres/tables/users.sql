@@ -6,6 +6,8 @@ CREATE TABLE users (
     email text UNIQUE NOT NULL,
     entries BIGINT DEFAULT 0,
     joined TIMESTAMP NOT NULL
+    --, pet text,
+    -- age
 );
 
 COMMIT;
