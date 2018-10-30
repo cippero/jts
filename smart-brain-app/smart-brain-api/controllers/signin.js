@@ -22,10 +22,11 @@ const handleSignin = (db, bcrypt, req, res) => {
     .catch(err => Promise.reject('wrong credentials'))
 }
 
-const getAuthTokenId = (authorization) => {
+const getAuthTokenId = (req, res) => {
+  const { authorization } = req.headers;
   return redis.get(authorization, (err, id) => {
-    if (err || !id) return Promise.reject('Unauthorized')
-    return { id }
+    if (err || !id) return res.status(400).json('Unauthorized');
+    return res.status(200).json({id})
   })
 }
 
@@ -47,11 +48,8 @@ const createSession = (user) => {
 }
 
 const handleAuthentication = (db, bcrypt) => (req, res) => {
-  const { authorization } = req.headers;
-  return authorization 
-    ? getAuthTokenId(authorization)
-        .then(data => res.status(200).json(data))
-        .catch(err => res.status(400).json(err))
+  return req.headers.authorization
+    ? getAuthTokenId(req, res)
     : handleSignin(db, bcrypt, req, res)
         .then(data => {
           return data.id && data.email 
@@ -63,5 +61,6 @@ const handleAuthentication = (db, bcrypt) => (req, res) => {
 }
 
 module.exports = {
-  handleAuthentication
+  handleAuthentication,
+  redis
 }

@@ -46,6 +46,36 @@ class App extends Component {
     this.state = initialState;
   }
 
+  componentDidMount() {
+    const token = window.sessionStorage.getItem('token');
+    fetch('http://localhost:3000/signin', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': token
+      }
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.id) {
+          fetch(`http://localhost:3000/profile/${data.id}`, {
+            method: 'get',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': token
+            }
+          }).then(resp => resp.json())
+            .then(user => {
+              if (user && user.email) {
+                this.loadUser(user);
+                this.onRouteChange('home');
+              }
+            })
+        }
+      })
+      .catch(console.log)
+  }
+
   loadUser = (data) => {
     this.setState({user: {
       id: data.id,
@@ -57,28 +87,35 @@ class App extends Component {
   }
 
   calculateFacesLocations = (data) => {
-    const image = document.getElementById('inputimage');
-    const width = Number(image.width);
-    const height = Number(image.height);
-    return data.outputs[0].data.regions.map(face => {
-      return {
-        leftCol: face.region_info.bounding_box.left_col * width,
-        topRow: face.region_info.bounding_box.top_row * height,
-        rightCol: width - (face.region_info.bounding_box.right_col * width),
-        bottomRow: height - (face.region_info.bounding_box.bottom_row * height)
-      }
-    });
+    if (data && data.outputs) {
+      const image = document.getElementById('inputimage');
+      const width = Number(image.width);
+      const height = Number(image.height);
+      return data.outputs[0].data.regions.map(face => {
+        return {
+          leftCol: face.region_info.bounding_box.left_col * width,
+          topRow: face.region_info.bounding_box.top_row * height,
+          rightCol: width - (face.region_info.bounding_box.right_col * width),
+          bottomRow: height - (face.region_info.bounding_box.bottom_row * height)
+        }
+      });
+    }
+    return
   }
 
-  displayFaceBox = (boxes) => { this.setState({boxes}); }
+  displayFaceBox = (boxes) => { boxes && this.setState({boxes}); }
 
   onInputChange = (event) => { this.setState({input: event.target.value}); }
 
   onButtonSubmit = () => {
+    const token = window.sessionStorage.getItem('token');
     this.setState({imageUrl: this.state.input});
       fetch('http://localhost:3000/imageurl', {
         method: 'post',
-        headers: {'Content-Type': 'application/json'},
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': token
+        },
         body: JSON.stringify({
           input: this.state.input
         })
@@ -89,7 +126,10 @@ class App extends Component {
           const faces = response.outputs[0].data.regions.length;
           fetch('http://localhost:3000/image', {
             method: 'put',
-            headers: {'Content-Type': 'application/json'},
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': token
+            },
             body: JSON.stringify({
               id: this.state.user.id,
               faces
@@ -118,6 +158,22 @@ class App extends Component {
 
   toggleModal = () => this.setState(prevState => ({...prevState, isProfileOpen: !prevState.isProfileOpen}));
 
+  signOut = () => {
+    const token = window.sessionStorage.getItem('token');
+    fetch('http://localhost:3000/signout', {
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': token
+      },
+    })
+    .then(() => { 
+      window.sessionStorage.removeItem('token');
+      this.onRouteChange('signout');
+    })
+    .catch(console.log);
+  }
+
   render() {
     const { isSignedIn, imageUrl, route, boxes, isProfileOpen } = this.state;
     return (
@@ -127,7 +183,8 @@ class App extends Component {
         />
         <Navigation isSignedIn={isSignedIn}
                     onRouteChange={this.onRouteChange}
-                    toggleModal={this.toggleModal} />
+                    toggleModal={this.toggleModal}
+                    signOut={this.signOut} />
         { isProfileOpen &&
           <Modal>
             <Profile  isProfileOpen={isProfileOpen} 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Signin.css';
 
-class Signin extends React.Component {
+export default class Signin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,13 +10,11 @@ class Signin extends React.Component {
     }
   }
 
-  onEmailChange = (event) => {
-    this.setState({signInEmail: event.target.value})
-  }
+  onEmailChange = (event) => { this.setState({signInEmail: event.target.value}) }
 
-  onPasswordChange = (event) => {
-    this.setState({signInPassword: event.target.value})
-  }
+  onPasswordChange = (event) => { this.setState({signInPassword: event.target.value}) }
+
+  saveAuthTokenInSession = (token) => { window.sessionStorage.setItem('token', token) }
 
   onSubmitSignIn = (e) => {
     e.preventDefault();
@@ -30,9 +28,23 @@ class Signin extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        if (data.userId) {
-          this.props.loadUser(data)
-          this.props.onRouteChange('home');
+        if (data.userId && data.success) {
+          this.saveAuthTokenInSession(data.token);
+          fetch(`http://localhost:3000/profile/${data.userId}`, {
+            method: 'get',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': data.token
+            }
+          })
+          .then(resp => resp.json())
+          .then(user => {
+            if (user && user.email) {
+              this.props.loadUser(user);
+              this.props.onRouteChange('home');
+            }
+          })
+          .catch(console.log)
         }
       })
   }
@@ -86,5 +98,3 @@ class Signin extends React.Component {
     );
   }
 }
-
-export default Signin;

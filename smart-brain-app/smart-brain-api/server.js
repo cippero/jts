@@ -9,6 +9,7 @@ const register   = require('./controllers/register');
 const signin     = require('./controllers/signin');
 const profile    = require('./controllers/profile');
 const image      = require('./controllers/image');
+const auth       = require('./middleware/authorization');
 
 const db = knex({
   client: 'pg',
@@ -24,10 +25,11 @@ app.use(bodyParser.json());
 app.get('/', (req, res)=> { /* res.send(db.users) */ res.send('Hello World!!!!')});
 app.post('/signin', signin.handleAuthentication(db, bcrypt));
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt)});
-app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db)});
-app.post('/profile/:id', (req, res) => { profile.handleProfileUpdate(req, res, db)});
-app.put('/image', (req, res) => { image.handleImage(req, res, db)});
-app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)});
+app.get('/profile/:id', auth.requireAuth, (req, res) => { profile.handleProfileGet(req, res, db)});
+app.post('/profile/:id', auth.requireAuth, (req, res) => { profile.handleProfileUpdate(req, res, db)});
+app.get('/signout', auth.requireAuth, (req, res) => { profile.handleSignOut(req, res)});
+app.put('/image', auth.requireAuth, (req, res) => { image.handleImage(req, res, db)});
+app.post('/imageurl', auth.requireAuth, (req, res) => { image.handleApiCall(req, res)});
 
 app.listen(3000, ()=> {
   console.log('app is running on port 3000');

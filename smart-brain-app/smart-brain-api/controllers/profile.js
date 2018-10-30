@@ -1,3 +1,5 @@
+const redis = require('../controllers/signin').redis;
+
 const handleProfileGet = (req, res, db) => {
   const { id } = req.params;
   db.select('*').from('users').where({id})
@@ -22,7 +24,21 @@ const handleProfileUpdate = (req, res, db) => {
     .catch(err => res.status(400).json('Error updating user'));
 }
 
+const handleSignOut = (req, res) => {
+  const { authorization } = req.headers;
+  if (authorization) {
+    redis.exists(authorization, (err, reply) => {
+      if (err || reply.length <= 0) return res.status(400).json('Unable to sign out');
+      redis.del(authorization, (error, resp) => {
+        if (error) return res.status(400).json('Unable to sign out');
+        return res.status(200).json('Signed out');
+      });
+    })
+  } else return res.status(400).json('Not authorized to sign out'); 
+}
+
 module.exports = {
   handleProfileGet,
-  handleProfileUpdate
+  handleProfileUpdate,
+  handleSignOut
 }

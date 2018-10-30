@@ -14,15 +14,21 @@ export default class Profile extends Component {
     handleUpdateChange = (e) => { this.setState({ [e.target.id]: e.target.value }); }
 
     handleUpdateSubmit = (e) => {
+        const token = window.sessionStorage.getItem('token');
         e.preventDefault();
         fetch(`http://localhost:3000/profile/${this.props.user.id}`, {
             method: 'post',
-            headers: {'Content-Type': 'application/json'},
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': token
+            },
             body: JSON.stringify({formInput: this.state})
         })
         .then(res => {
-            this.props.toggleModal();
-            this.props.loadUser({...res, ...this.state});
+            if (res.status === 200 || res.status === 304) {
+                this.props.toggleModal();
+                this.props.loadUser({...res, ...this.state});
+            }
         })
         .catch(console.log);
     }
