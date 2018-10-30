@@ -9,8 +9,6 @@ services:
     working_dir: /usr/src/smart-brain-api
     environment:
       POSTGRES_URI: postgres://sally:secret@postgres:5432/smart-brain-docker
-    links:
-      - postgres
     ports: # tells docker to expose a port and forward it to a port that can be accessed outside of the container
       - "3000:3000"
     volumes: # tells docker to look at current directory (./) and hot reload those files into /usr/src/smart-brain-api
