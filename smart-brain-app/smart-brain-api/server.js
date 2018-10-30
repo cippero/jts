@@ -1,15 +1,14 @@
 require('dotenv').config();
-const express = require('express');
+const express    = require('express');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt-nodejs');
-const cors = require('cors');
-const knex = require('knex');
-const morgan = require('morgan');
-
-const register = require('./controllers/register');
-const signin = require('./controllers/signin');
-const profile = require('./controllers/profile');
-const image = require('./controllers/image');
+const bcrypt     = require('bcrypt-nodejs');
+const cors       = require('cors');
+const knex       = require('knex');
+const morgan     = require('morgan');
+const register   = require('./controllers/register');
+const signin     = require('./controllers/signin');
+const profile    = require('./controllers/profile');
+const image      = require('./controllers/image');
 
 const db = knex({
   client: 'pg',
@@ -23,7 +22,7 @@ app.use(cors())
 app.use(bodyParser.json());
 
 app.get('/', (req, res)=> { /* res.send(db.users) */ res.send('Hello World!!!!')});
-app.post('/signin', signin.handleSignin(db, bcrypt));
+app.post('/signin', signin.handleAuthentication(db, bcrypt));
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt)});
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db)});
 app.post('/profile/:id', (req, res) => { profile.handleProfileUpdate(req, res, db)});
