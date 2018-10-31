@@ -27,7 +27,7 @@ export default class Profile extends Component {
         .then(res => {
             if (res.status === 200 || res.status === 304) {
                 this.props.toggleModal();
-                this.props.loadUser({...res, ...this.state});
+                this.props.loadUser({...this.state});
             }
         })
         .catch(console.log);

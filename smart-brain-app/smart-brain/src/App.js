@@ -36,7 +36,8 @@ const initialState = {
     email: '',
     entries: 0,
     joined: '',
-    pet: ''
+    pet: '',
+    age: 0
   }
 }
 
@@ -77,13 +78,29 @@ class App extends Component {
   }
 
   loadUser = (data) => {
-    this.setState({user: {
-      id: data.id,
-      name: data.name,
-      email: data.email,
-      entries: data.entries,
-      joined: data.joined
-    }});
+    if (data.id) {
+      this.setState({
+        user: {
+          id: data.id,
+          name: data.name,
+          email: data.email,
+          entries: data.entries,
+          joined: data.joined,
+          pet: data.pet,
+          age: data.age
+        }
+      });
+    } else {
+      console.log(this.state);
+      this.setState(prevState => ({
+        user: {
+          ...prevState.user,
+          name: data.name,
+          pet: data.pet,
+          age: data.age
+        }
+      }));
+    }
   }
 
   calculateFacesLocations = (data) => {

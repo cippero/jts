@@ -1,4 +1,4 @@
-const jwt   = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 const redisModule = require('redis');
 
 const redis = redisModule.createClient(process.env.REDIS_URI);
@@ -60,7 +60,8 @@ const handleAuthentication = (db, bcrypt) => (req, res) => {
         .catch(err => res.status(400).json(err))
 }
 
-module.exports = {
+module.exports = { 
   handleAuthentication,
-  redis
+  redis,
+  jwt
 }

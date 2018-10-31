@@ -10,11 +10,9 @@ export default class Signin extends React.Component {
     }
   }
 
-  onEmailChange = (event) => { this.setState({signInEmail: event.target.value}) }
-
-  onPasswordChange = (event) => { this.setState({signInPassword: event.target.value}) }
-
-  saveAuthTokenInSession = (token) => { window.sessionStorage.setItem('token', token) }
+  onEmailChange = (event) => this.setState({signInEmail: event.target.value});
+  onPasswordChange = (event) => this.setState({signInPassword: event.target.value});
+  saveAuthTokenInSession = (token) => window.sessionStorage.setItem('token', token);
 
   onSubmitSignIn = (e) => {
     e.preventDefault();

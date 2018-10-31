@@ -1,3 +1,6 @@
+const redis = require('./signin').redis;
+const jwt = require('./signin').jwt;
+
 const handleRegister = (req, res, db, bcrypt) => {
   const { email, name, password } = req.body;
   if (!email || !name || !password) {
@@ -20,7 +23,10 @@ const handleRegister = (req, res, db, bcrypt) => {
             joined: new Date()
           })
           .then(user => {
-            res.json(user[0]);
+            createSession(user)
+              .then(session => res.status(200).json(session))
+              .catch(err => res.status(400).json(err))
+            // res.json(user[0]);
           })
       })
       .then(trx.commit)
@@ -29,8 +35,25 @@ const handleRegister = (req, res, db, bcrypt) => {
     .catch(err => { console.log(err); res.status(400).json('unable to register'); });
 }
 
-module.exports = {
-  handleRegister: handleRegister
-};
+const signToken = (payload) => {
+  const jwtToken = { payload };
+  return jwt.sign(jwtToken, process.env.JWT_SECRET, { expiresIn: '2 days'})
+}
+
+const setToken = (key, value) => {
+  console.log({key, value});
+  return Promise.resolve(redis.set(key, value))
+}
+
+const createSession = (user) => {
+  console.log({user});
+  const { email, id } = user[0];
+  const token = signToken(email);
+  return setToken(token, id)
+    .then(() => ({ success: true, userId: id, token}))
+    .catch(console.log)
+}
+
+module.exports = { handleRegister }
 
 
